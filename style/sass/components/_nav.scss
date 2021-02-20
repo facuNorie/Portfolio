@@ -1,0 +1,54 @@
+@use ".././tools/variables" as var;
+#fp-nav{
+    ul{
+        li{
+            .fp-tooltip{
+                color: var.$colorB;
+            }
+            a{
+                span{
+                    background-color: var.$colorB;
+                }
+            }
+        }
+    }
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    z-index: 70;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        text-decoration: none;
+        font-size: 1.6em;
+        color: var.$colorB;
+        font-weight: 580;
+        
+    }
+    ul{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        margin: 0 20px;
+        a{
+            color: var.$colorB;
+            padding: 9px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            border-radius: 4px;
+            &:hover{
+                background-color: var.$colorB;
+                color: var.$colorC; 
+                
+            }
+        }
+    }
+
+}
