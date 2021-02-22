@@ -1,0 +1,41 @@
+@use ".././tools/variables" as var;
+
+.about{
+    background-color: lighten(var.$colorA,17);
+}
+.cardAbout{
+    background-color: lighten(var.$colorA,15);
+    border: 3px solid var.$colorB;
+    border-radius: 20px;
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    &__profile{
+        border-right: 3px solid var.$colorB;
+        min-width: 30%;
+        &-img{
+            display: block;
+            width: 50%;
+            margin: 30px auto;
+            border-radius: 100%;
+            border: 1px solid var.$colorB;
+        }
+        &-data{
+            padding: 10px;
+            p{
+                font-size: 1.4em;
+                text-align: center;
+            }
+        }
+    }
+
+    &__description{
+        padding: 10px;
+        p{
+            font-size: 1.7em;
+            margin-top: 40px;
+        }
+    }
+}

@@ -17,7 +17,7 @@
 .nav{
     position: fixed;
     width: 100%;
-    padding: 20px;
+    padding: 20px 50px;
     margin: 0;
     display: flex;
     z-index: 70;
@@ -40,8 +40,8 @@
             color: var.$colorB;
             padding: 9px;
             text-decoration: none;
-            text-transform: uppercase;
             font-size: 20px;
+            font-weight: 600;
             border-radius: 4px;
             &:hover{
                 background-color: var.$colorB;
