@@ -3,11 +3,11 @@
     ul{
         li{
             .fp-tooltip{
-                color: var.$colorB;
+                color: var.$colorC;
             }
             a{
                 span{
-                    background-color: var.$colorB;
+                    background-color: var.$colorC;
                 }
             }
         }
@@ -26,7 +26,7 @@
     &__logo{
         text-decoration: none;
         font-size: 1.6em;
-        color: var.$colorB;
+        color: var.$colorW;
         font-weight: 580;
         
     }
@@ -37,15 +37,15 @@
         list-style: none;
         margin: 0 20px;
         a{
-            color: var.$colorB;
+            color: var.$colorC;
             padding: 9px;
             text-decoration: none;
             font-size: 20px;
             font-weight: 600;
             border-radius: 4px;
             &:hover{
-                background-color: var.$colorB;
-                color: var.$colorC; 
+                background-color: var.$colorC;
+                color: var.$colorB;
                 
             }
         }

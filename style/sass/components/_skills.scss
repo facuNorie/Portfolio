@@ -1,0 +1,46 @@
+@use ".././tools/variables" as var;
+
+.skills{
+    background-color: var.$colorB;
+}
+
+.divIconsSkills{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    .icons{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        p{
+            color: var.$colorW;
+            font-size: 1.2em;
+        }
+        img{
+            padding: 8px;
+            border-radius: 12px;
+            width: 110px;
+            height: 110px;
+        }
+        .imgIcon-JAVASCRIPT{
+            padding: 0;
+        }
+    }
+}
+.imgIcon-HTML{
+    background-color:  /* #f16529 */lighten(#e44d26,11);
+}
+.imgIcon-CSS{
+    background-color: darken(#33a9dc,12);
+}
+.imgIcon-SASS{
+    background-color: lighten(#CF649A,19);
+}
+.imgIcon-GIT{
+    background-color: darken(#DE4C369A,11);
+}
+.imgIcon-GITHUB{
+    background-color: lighten(#161614,34);
+}
