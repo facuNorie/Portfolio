@@ -33,7 +33,7 @@
   color: #a8dadc;
   margin: 20px;
   font-weight: 590;
-  font-size: 2.3em;
+  font-size: 2.1em;
   margin-bottom: 40px;
 }
 .container-main__h1 span {
@@ -215,6 +215,93 @@
 
 .imgIcon-GITHUB {
   background-color: #717167;
+}
+
+.portfolio {
+  background-color: #1d3557;
+}
+
+.fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+  top: 90%;
+}
+
+.fp-controlArrow.fp-next {
+  border-width: 30px 0 30px 30px;
+  border-color: transparent transparent transparent #457b9d;
+}
+
+.fp-controlArrow.fp-prev {
+  border-width: 30px 30px 30px 0;
+  border-color: transparent #457b9d transparent transparent;
+}
+
+.cardsContainer {
+  display: flex;
+}
+
+.cardsPortfolio {
+  height: 80vh;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 40px;
+  position: relative;
+}
+.cardsPortfolio__texts {
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+  background-color: turquoise;
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cardsPortfolio__texts-desc {
+  text-align: center;
+  display: none;
+}
+.cardsPortfolio__texts-divLinks {
+  display: none;
+}
+.cardsPortfolio__img {
+  width: 100%;
+  height: 70%;
+}
+.cardsPortfolio:hover .cardsPortfolio__texts {
+  animation: animationCard 1.5s forwards;
+}
+.cardsPortfolio:hover .cardsPortfolio__texts-desc {
+  display: inline;
+  animation: animationCardTexts 1.8s forwards;
+}
+.cardsPortfolio:hover .cardsPortfolio__texts-divLinks {
+  display: inline;
+  animation: animationCardTexts 1.8s forwards;
+}
+
+@keyframes animationCard {
+  0% {
+    height: 40%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animationCardTexts {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
