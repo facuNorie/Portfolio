@@ -3,7 +3,7 @@ const sectionsPage = new fullpage(`#fullpage`,{
     menu: `menu`,
     anchors: [`home`,`about`,`skills`,`portfolio`,`contact`],
     navigationTooltips: [`Home`,`About`,`Skills`,`Portfolio`,`Contact`],
-    showActiveTooltip: true
+    showActiveTooltip: false
 });
 
 // Create Icons
