@@ -181,12 +181,19 @@
   text-decoration: underline;
 }
 .cardAbout__description {
-  padding: 10px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  /* text-align: center; */
 }
 .cardAbout__description p {
   color: #f1faee;
   font-size: 1.5em;
-  margin-top: 40px;
+  opacity: 0.9;
+}
+.cardAbout__description p a {
+  color: #457b9d;
 }
 
 .skills {
@@ -244,7 +251,7 @@
 }
 
 .fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
-  top: 90%;
+  top: 95%;
 }
 
 .fp-controlArrow.fp-next {
@@ -323,6 +330,19 @@
 .cardsPortfolio:hover .cardsPortfolio__texts-divLinks {
   display: inline;
   animation: animationCardTexts 1.8s forwards;
+}
+
+.contact {
+  background-color: #1d3557;
+}
+.contact div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact div h1 {
+  color: #a8dadc;
+  font-size: 3em;
 }
 
 /*# sourceMappingURL=style.css.map */

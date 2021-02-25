@@ -1,0 +1,14 @@
+@use ".././tools/variables" as var;
+
+.contact{
+    background-color: var.$colorB;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            color: var.$colorC;
+            font-size: 3em;
+        }
+    }
+}

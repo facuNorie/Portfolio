@@ -51,11 +51,18 @@
     }
 
     &__description{
-        padding: 10px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        /* text-align: center; */
         p{
             color: var.$colorW;
             font-size: 1.5em;
-            margin-top: 40px;
+            opacity: .9;
+            a{
+                color: var.$colorA;
+            }
         }
     }
 }
