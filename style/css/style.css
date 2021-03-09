@@ -61,18 +61,19 @@
 }
 .container-main__btn {
   text-decoration: none;
-  background-color: #f1faee;
-  color: #1d3557;
-  font-weight: 600;
-  padding: 17px;
+  background-color: #1d3557;
+  color: #f1faee;
+  border: 2px solid #f1faee;
+  font-weight: 500;
+  padding: 20px;
   font-size: 1.3em;
   border-radius: 40px;
   margin-left: 17px;
 }
 .container-main__btn:hover {
-  font-weight: 100;
-  background-color: #457b9d;
-  color: #f1faee;
+  font-weight: 600;
+  background-color: #f1faee;
+  color: #1d3557;
 }
 
 .container-icon {
@@ -335,14 +336,54 @@
 .contact {
   background-color: #1d3557;
 }
-.contact div {
+
+.contact-container {
+  width: 90%;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+.contact-container__img {
+  width: 40%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.contact div h1 {
+.form input,
+.form textarea {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  resize: none;
+  background-color: #457b9d;
+  color: #f1faee;
+  font-size: 1.3em;
+  padding: 10px;
+  margin: 10px;
+}
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border: 2px solid white;
+}
+.form input::placeholder,
+.form textarea::placeholder {
   color: #a8dadc;
-  font-size: 3em;
+}
+.form .form__btn {
+  background-color: #1d3557;
+  color: #f1faee;
+  border: 2px solid #f1faee;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 20px;
+}
+.form .form__btn:hover {
+  background-color: #f1faee;
+  color: #1d3557;
 }
 
 /*# sourceMappingURL=style.css.map */

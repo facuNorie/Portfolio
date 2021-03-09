@@ -1,14 +1,52 @@
 @use ".././tools/variables" as var;
 
-.contact{
-    background-color: var.$colorB;
-    div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        h1{
-            color: var.$colorC;
-            font-size: 3em;
-        }
+.contact {
+  background-color: var.$colorB;
+}
+
+.contact-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  &__img {
+    width: 40%;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input,
+  textarea {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    resize: none;
+    background-color: var.$colorA;
+    color: var.$colorW;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 10px;
+    &:focus {
+      outline: none;
+      border: 2px solid white;
     }
+    &::placeholder {
+      color: var.$colorC;
+    }
+  }
+  .form__btn {
+    background-color: var.$colorB;
+    color: var.$colorW;
+    border: 2px solid var.$colorW;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 20px;
+    &:hover {
+      background-color: var.$colorW;
+      color: var.$colorB;
+    }
+  }
 }
