@@ -2,48 +2,48 @@
 @use ".././tools/animations" as animat;
 
 .main {
-  background-color: var.$colorB;
+	background-color: var.$colorB;
 }
 .container-main {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  &__h1 {
-    color: var.$colorC;
-    margin: 20px;
-    font-weight: 590;
-    font-size: 2.1em;
-    margin-bottom: 40px;
-    span {
-      color: var.$colorW;
-      font-weight: 1000;
-    }
-  }
-  &__btn {
-    text-decoration: none;
-    background-color: var.$colorB;
-    color: var.$colorW;
-    border: 2px solid var.$colorW;
-    font-weight: 500;
-    padding: 20px;
-    font-size: 1.3em;
-    border-radius: 40px;
-    margin-left: 17px;
-    &:hover {
-      font-weight: 600;
-      background-color: var.$colorW;
-      color: var.$colorB;
-    }
-  }
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	&__h1 {
+		color: var.$colorC;
+		margin: 20px;
+		font-weight: 590;
+		font-size: 2.1em;
+		margin-bottom: 40px;
+		span {
+			color: var.$colorW;
+			font-weight: 1000;
+		}
+	}
+	&__btn {
+		text-decoration: none;
+		background-color: var.$colorB;
+		color: var.$colorW;
+		border: 2px solid var.$colorW;
+		font-weight: 500;
+		padding: 20px;
+		font-size: 1.3em;
+		border-radius: 40px;
+		margin-left: 17px;
+		&:hover {
+			font-weight: 600;
+			background-color: var.$colorW;
+			color: var.$colorB;
+		}
+	}
 }
 
 .container-icon {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  font-size: 40px;
-  animation: down-up 1s ease infinite;
-  a {
-    color: var.$colorW;
-  }
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	font-size: 40px;
+	animation: down-up 1s ease infinite;
+	a {
+		color: var.$colorW;
+	}
 }

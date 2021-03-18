@@ -1,0 +1,91 @@
+@use ".././tools/variables" as var;
+
+@media screen and (max-width: 600px) {
+	.container-main {
+		&__h1 {
+			text-align: center;
+			font-size: 1.9em;
+		}
+		&__img,
+		&__btn {
+			display: none;
+		}
+	}
+	.container-icon {
+		left: 45%;
+	}
+	.cardAbout__description {
+		display: none;
+	}
+
+	#menu {
+		background-color: darken(var.$colorB, 10);
+		position: absolute;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		right: 600px;
+		top: 0;
+		li {
+			width: 100%;
+			height: 33.33vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			a {
+				font-size: 1.5em;
+				padding: 20px;
+			}
+		}
+	}
+	.menu-active {
+		animation: animationNav 1s forwards;
+	}
+	@keyframes animationNav {
+		0% {
+			right: 500px;
+		}
+		100% {
+			right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#fp-nav {
+		display: none;
+	}
+	.container-main {
+		&__img {
+			width: 30%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 992px) and (min-width: 600px) {
+	.container-main {
+		position: relative;
+		&__h1 {
+			margin: 10px;
+			font-weight: 590;
+			font-size: 1.6em;
+			margin-bottom: 20px;
+		}
+		&__btn {
+			padding: 15px;
+			font-size: 1.1em;
+			margin-left: 7px;
+			position: absolute;
+		}
+		&__img {
+			width: 40%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

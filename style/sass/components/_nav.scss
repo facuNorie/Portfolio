@@ -1,54 +1,51 @@
 @use ".././tools/variables" as var;
-#fp-nav{
-    ul{
-        li{
-            .fp-tooltip{
-                color: var.$colorC;
-            }
-            a{
-                span{
-                    background-color: var.$colorC;
-                }
-            }
-        }
-    }
+#fp-nav {
+	ul {
+		li {
+			.fp-tooltip {
+				color: var.$colorC;
+			}
+			a {
+				span {
+					background-color: var.$colorC;
+				}
+			}
+		}
+	}
 }
 
-.nav{
-    position: fixed;
-    width: 100%;
-    padding: 20px 50px;
-    margin: 0;
-    display: flex;
-    z-index: 70;
-    justify-content: space-between;
-    align-items: center;
-    &__logo{
-        text-decoration: none;
-        font-size: 1.6em;
-        color: var.$colorW;
-        font-weight: 580;
-        
-    }
-    ul{
-        display: flex;
-    }
-    li{
-        list-style: none;
-        margin: 0 20px;
-        a{
-            color: var.$colorC;
-            padding: 9px;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 600;
-            border-radius: 4px;
-            &:hover{
-                background-color: var.$colorC;
-                color: var.$colorB;
-                
-            }
-        }
-    }
-
+.nav {
+	position: fixed;
+	width: 100%;
+	padding: 20px 50px;
+	margin: 0;
+	display: flex;
+	z-index: 70;
+	justify-content: space-between;
+	align-items: center;
+	&__logo {
+		text-decoration: none;
+		font-size: 1.6em;
+		color: var.$colorW;
+		font-weight: 580;
+	}
+	ul {
+		display: flex;
+	}
+	li {
+		list-style: none;
+		margin: 0 20px;
+		a {
+			color: var.$colorC;
+			padding: 9px;
+			text-decoration: none;
+			font-size: 20px;
+			font-weight: 600;
+			border-radius: 4px;
+			&:hover {
+				background-color: var.$colorC;
+				color: var.$colorB;
+			}
+		}
+	}
 }
