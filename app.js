@@ -36,8 +36,8 @@ hamburger.addEventListener("click", function () {
 let links = document.querySelectorAll(".link");
 links.forEach(link => {
 	link.addEventListener("click", () => {
-		menu.classList.toggle("menu-active");
-		hamburger.classList.toggle("is-active");
+		menu.classList.remove("menu-active");
+		hamburger.classList.remove("is-active");
 	});
 });
 
@@ -59,6 +59,14 @@ const icons = [
 	{
 		name: `JAVASCRIPT`,
 		url: `./media/logo-javascript.svg`,
+	},
+	{
+		name: `REACT`,
+		url: `./media/react-1.svg`,
+	},
+	{
+		name: `STYLED-COMPONENTS`,
+		url: `./media/styled-components.png`,
 	},
 	{
 		name: `GIT`,

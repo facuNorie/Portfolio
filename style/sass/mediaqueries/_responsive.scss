@@ -1,5 +1,4 @@
 @use ".././tools/variables" as var;
-
 @media screen and (max-width: 600px) {
 	.container-main {
 		&__h1 {
@@ -14,8 +13,9 @@
 	.container-icon {
 		left: 45%;
 	}
-	.cardAbout__description {
-		display: none;
+
+	.cardAbout__profile {
+		border-right: none;
 	}
 
 	#menu {
@@ -51,11 +51,60 @@
 			right: 0;
 		}
 	}
+	.cardsContainer {
+		flex-direction: column;
+		padding: 0 70px;
+		justify-content: center;
+	}
+	.cardsPortfolio {
+		flex-basis: 170px;
+		margin: 20px;
+		&__img {
+			display: none;
+		}
+		&__texts {
+			height: 100%;
+			&-title {
+				font-size: 1em;
+			}
+			&-desc {
+				display: none;
+			}
+		}
+		&:hover &__texts,
+		&__texts-divLinks {
+			animation: none;
+		}
+		&__texts-divLinks {
+			display: inline;
+			padding: 0;
+			font-size: 0.7em;
+		}
+		&:hover &__texts-desc {
+			display: none;
+			animation: none;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
 	#fp-nav {
 		display: none;
+	}
+	.cardAbout__description {
+		display: none;
+	}
+	.cardAbout__profile {
+		width: 100%;
+		border-right: none;
+	}
+	.cardAbout__profile-img {
+		width: 30%;
+	}
+	.cardAbout__profile-data {
+		a {
+			font-size: 1.4em;
+		}
 	}
 	.container-main {
 		&__img {
@@ -63,6 +112,11 @@
 			img {
 				width: 100%;
 			}
+		}
+	}
+	.contact-container {
+		&__img {
+			display: none;
 		}
 	}
 }
@@ -87,5 +141,50 @@
 				width: 100%;
 			}
 		}
+	}
+	.cardAbout__description {
+		p {
+			text-align: center;
+		}
+	}
+}
+@media screen and (max-width: 768px) and (min-width: 600px) {
+	.cardsPortfolio {
+		height: 60vh;
+		flex-basis: 200px;
+		&__texts {
+			&-title {
+				font-size: 1em;
+			}
+			&-desc {
+				font-size: 0.7em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+	.cardsPortfolio {
+		flex-basis: 250px;
+		&__texts {
+			&-title {
+				font-size: 1.2em;
+			}
+			&-desc {
+				font-size: 0.9em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.cardAbout__description {
+		p {
+			font-size: 1.2em;
+		}
+	}
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+	.cardsPortfolio {
+		flex-basis: 350px;
 	}
 }
