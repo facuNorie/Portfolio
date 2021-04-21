@@ -1,52 +1,84 @@
 @use ".././tools/variables" as var;
 
 .contact {
-  background-color: var.$colorB;
+	background-color: var.$colorB;
+	position: relative;
 }
 
 .contact-container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  &__img {
-    width: 40%;
-  }
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	.container-img {
+		width: 45%; /* 
+		h2 {
+			color: var.$colorW;
+			margin: 10px 0;
+			text-align: center;
+		} */
+	}
+	&__img {
+		width: 100%;
+	}
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  input,
-  textarea {
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-    resize: none;
-    background-color: var.$colorA;
-    color: var.$colorW;
-    font-size: 1.3em;
-    padding: 10px;
-    margin: 10px;
-    &:focus {
-      outline: none;
-      border: 2px solid white;
-    }
-    &::placeholder {
-      color: var.$colorC;
-    }
-  }
-  .form__btn {
-    background-color: var.$colorB;
-    color: var.$colorW;
-    border: 2px solid var.$colorW;
-    cursor: pointer;
-    width: 100px;
-    border-radius: 20px;
-    &:hover {
-      background-color: var.$colorW;
-      color: var.$colorB;
-    }
-  }
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 400px;
+	border-radius: 15px;
+	padding: 15px;
+	background-color: darken(var.$colorB, 4);
+	box-shadow: 6px 7px 46px -10px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 6px 7px 46px -10px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 6px 7px 46px -10px rgba(0, 0, 0, 0.75);
+	input,
+	textarea {
+		border: none;
+		border-radius: 7px;
+		width: 100%;
+		resize: none;
+		background-color: var.$colorB;
+		color: var.$colorW;
+		font-size: 1.3em;
+		padding: 10px;
+		margin: 7px;
+		&:focus {
+			outline: none;
+			border: 2px solid white;
+		}
+		&::placeholder {
+			color: var.$colorC;
+		}
+	}
+	.form__btn {
+		background-color: darken(var.$colorB, 4);
+		color: var.$colorW;
+		border: 2px solid var.$colorW;
+		cursor: pointer;
+		width: 100px;
+		border-radius: 20px;
+		&:hover {
+			background-color: var.$colorW;
+			color: var.$colorB;
+		}
+	}
+}
+
+footer {
+	background-color: darken(var.$colorB, 10);
+	color: var.$colorW;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	p {
+		text-align: center;
+		b {
+			color: var.$colorA;
+		}
+	}
 }

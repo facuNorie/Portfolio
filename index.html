@@ -11,6 +11,8 @@
 			href="./node_modules/fullpage.js/dist/fullpage.css"
 		/>
 		<link rel="stylesheet" href="./style/css/style.css" />
+		<link rel="shortcut icon" type="icon/ico" href="./media/icono.co" />
+
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -44,8 +46,8 @@
 				<div class="container-main">
 					<div class="container-main__texts">
 						<h1 class="container-main__h1">
-							Hola, soy <span>Facundo Noriega</span>, y<br />soy Junior Front
-							End Developer
+							Hola, soy <span>Facundo Noriega</span><br />y soy Front End
+							Developer
 						</h1>
 						<a class="container-main__btn" href="#about">Sobre Mi</a>
 					</div>
@@ -91,17 +93,16 @@
 					</div>
 					<div class="cardAbout__description">
 						<p>
-							Soy un estudiante de nivel secundario en una escuela tecnica donde
-							en el 2021 estaré cursando el ultimo año del mismo.<br />
-							Actualmente mi capacitacion es totalmente autodidacta, incluyendo
-							roadmap, teoria y practica. Dicha capacitacion es cercana a 1
-							año.<br />
+							Soy un estudiante de nivel secundario en una escuela técnica donde
+							en el 2021 estoy cursando el último año de la misma.<br />
+							Actualmente mi capacitación es autodidacta, incluyendo roadmap,
+							teoría y práctica. Dicha capacitación es cercana a 1 año.<br />
 							Si bien es cierto que con mis
 							<a href="#skills">habilidades</a> (tecnologías dominadas), la
-							creacion y modificacion de paginas web puede llevarse a cabo,
+							creacion y modificacion de páginas web puede llevarse a cabo,
 							quiero seguir ampliando mis conocimientos, por lo cual es que
-							estoy en constante aprendizaje de tecnologías como: ReactJs,
-							NodeJs, BDD, Python, Typescript.
+							estoy en constante aprendizaje de tecnologías como: Node Js, BDD,
+							Python, Typescript, Firebase.
 						</p>
 					</div>
 				</div>
@@ -122,7 +123,7 @@
 								<p class="cardsPortfolio__texts-title">Alambrados ElAs</p>
 								<p class="cardsPortfolio__texts-desc">
 									Pagina sobre empresa de Alambrados, construida para mobile y
-									adaptada a desktop.
+									adaptada a desktop, hecha con vainilla JS.
 								</p>
 								<div class="cardsPortfolio__texts-divLinks">
 									<a
@@ -140,27 +141,27 @@
 								</div>
 							</div>
 						</div>
-						<div class="cardsPortfolio" id="appleWatch">
+						<div class="cardsPortfolio" id="unsplash">
 							<img
-								src="./media/appleWatch.png"
+								src="./media/Unsplash.png"
 								alt=""
 								class="cardsPortfolio__img"
 							/>
 							<div class="cardsPortfolio__texts">
-								<p class="cardsPortfolio__texts-title">Apple Watch</p>
+								<p class="cardsPortfolio__texts-title">Image Search</p>
 								<p class="cardsPortfolio__texts-desc">
-									Landing Page sobre un "Apple Watch" con descripcion del
-									producto y formulario de compra(no funcional).
+									Buscador de imagenes, hecho en React con la api de Unsplash
+									(mobile).
 								</p>
 								<div class="cardsPortfolio__texts-divLinks">
 									<a
-										href="https://facunorie.github.io/Apple-Watch/"
+										href="https://facunorie.github.io/Unsplash/"
 										class="cardsPortfolio__texts-links"
 										target="_BLANK"
 										>Live</a
 									>
 									<a
-										href="https://github.com/facuNorie/Apple-Watch"
+										href="https://github.com/facuNorie/Unsplash"
 										class="cardsPortfolio__texts-links"
 										target="_BLANK"
 										>Code</a
@@ -175,20 +176,19 @@
 								class="cardsPortfolio__img"
 							/>
 							<div class="cardsPortfolio__texts">
-								<p class="cardsPortfolio__texts-title">Todo List</p>
+								<p class="cardsPortfolio__texts-title">Todo App</p>
 								<p class="cardsPortfolio__texts-desc">
-									Lista de quehaceres,donde podemos agregar y eliminar los
-									diferentes items de la lista.
+									Todo list hecho con React (CRUD)
 								</p>
 								<div class="cardsPortfolio__texts-divLinks">
 									<a
-										href="https://facunorie.github.io/Todo-List/"
+										href="https://facunorie.github.io/Todo-App/"
 										class="cardsPortfolio__texts-links"
 										target="_BLANK"
 										>Live</a
 									>
 									<a
-										href="https://github.com/facuNorie/Todo-List"
+										href="https://github.com/facuNorie/Todo-App"
 										class="cardsPortfolio__texts-links"
 										target="_BLANK"
 										>Code</a
@@ -237,9 +237,8 @@
 							<div class="cardsPortfolio__texts">
 								<p class="cardsPortfolio__texts-title">Weather App</p>
 								<p class="cardsPortfolio__texts-desc">
-									Weather App, pasando como parametro una ciudad o un pais,
-									devuelve la temperatura en grados en tiempo real, Fabricada
-									con la Api OpenWeatherMap.
+									Weather App en tiempo real, hecha con vainilla js con la api
+									de OpenWeatherMap.
 								</p>
 								<div class="cardsPortfolio__texts-divLinks">
 									<a
@@ -266,8 +265,8 @@
 							<div class="cardsPortfolio__texts">
 								<p class="cardsPortfolio__texts-title">Dog Api</p>
 								<p class="cardsPortfolio__texts-desc">
-									Ingresando una raza de perro, el programa devolvera una foto
-									random del mismo, Fabricada con la Api dogApi.
+									Generador de imagen random de perro por raza, hecha con
+									vainilla js con la Api dogApi.
 								</p>
 								<div class="cardsPortfolio__texts-divLinks">
 									<a
@@ -290,25 +289,53 @@
 			</div>
 			<div class="section contact">
 				<div class="contact-container">
-					<img
-						src="./media/New Message_Monochromatic.svg"
-						class="contact-container__img"
-						alt=""
-					/>
-					<form class="form">
-						<input type="text" placeholder="Name" class="form__name" />
-						<input type="email" placeholder="Email" class="form__email" />
+					<div class="container-img">
+						<img
+							src="./media/New Message_Monochromatic.svg"
+							class="contact-container__img"
+							alt=""
+						/>
+						<!-- <h2>Trabajemos juntos</h2> -->
+					</div>
+
+					<form
+						action="https://formspree.io/f/xknkwlkb"
+						method="POST"
+						class="form"
+					>
+						<input
+							type="text"
+							placeholder="Name"
+							class="form__name"
+							name="name"
+							required
+							autocomplete="off"
+						/>
+						<input
+							name="email"
+							type="email"
+							placeholder="Email"
+							class="form__email"
+							required
+							autocomplete="off"
+						/>
 						<textarea
-							name=""
-							id=""
+							name="message"
 							cols="30"
 							rows="10"
 							class="form__textarea"
 							placeholder="Message"
+							required
 						></textarea>
 						<input type="submit" value="Send" class="form__btn" />
 					</form>
 				</div>
+				<footer>
+					<p>
+						Developed and designed by <b>Facu Noriega</b>. ©2021. All rights
+						reserved.
+					</p>
+				</footer>
 			</div>
 		</div>
 		<script

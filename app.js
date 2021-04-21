@@ -68,6 +68,10 @@ const icons = [
 		name: `STYLED-COMPONENTS`,
 		url: `./media/styled-components.png`,
 	},
+		{
+		name: `MATERIAL-UI`,
+		url: `./media/material-ui-1.svg`,
+	},
 	{
 		name: `GIT`,
 		url: `./media/git-icon.svg`,
@@ -76,6 +80,7 @@ const icons = [
 		name: `GITHUB`,
 		url: `./media/github-icon-1.svg`,
 	},
+
 ];
 
 for (icon of icons) {

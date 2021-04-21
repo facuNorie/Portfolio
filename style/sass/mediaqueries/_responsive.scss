@@ -1,4 +1,10 @@
 @use ".././tools/variables" as var;
+@media screen and (max-width: 350px) {
+	.nav {
+		padding: 20px !important;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	.container-main {
 		&__h1 {
@@ -16,6 +22,9 @@
 
 	.cardAbout__profile {
 		border-right: none;
+	}
+	.nav {
+		padding: 10px 50px;
 	}
 
 	#menu {
@@ -35,8 +44,10 @@
 			align-items: center;
 			justify-content: center;
 			a {
+				width: 50%;
+				text-align: center;
 				font-size: 1.5em;
-				padding: 20px;
+				padding: 1rem 0;
 			}
 		}
 	}
@@ -51,43 +62,19 @@
 			right: 0;
 		}
 	}
-	.cardsContainer {
-		flex-direction: column;
-		padding: 0 70px;
-		justify-content: center;
+	.cardsPortfolio__texts-title {
+		font-size: 1em;
 	}
-	.cardsPortfolio {
-		flex-basis: 170px;
-		margin: 20px;
-		&__img {
-			display: none;
-		}
-		&__texts {
-			height: 100%;
-			&-title {
-				font-size: 1em;
-			}
-			&-desc {
-				display: none;
-			}
-		}
-		&:hover &__texts,
-		&__texts-divLinks {
-			animation: none;
-		}
-		&__texts-divLinks {
-			display: inline;
-			padding: 0;
-			font-size: 0.7em;
-		}
-		&:hover &__texts-desc {
-			display: none;
-			animation: none;
-		}
+	.cardsPortfolio__texts-desc {
+		font-size: 0.8em;
 	}
 }
 
 @media screen and (max-width: 768px) {
+	.cardsContainer {
+		padding: 10px 5px 5px 5px !important;
+	}
+
 	#fp-nav {
 		display: none;
 	}
@@ -115,7 +102,7 @@
 		}
 	}
 	.contact-container {
-		&__img {
+		.container-img {
 			display: none;
 		}
 	}
@@ -148,30 +135,48 @@
 		}
 	}
 }
-@media screen and (max-width: 768px) and (min-width: 600px) {
+@media screen and (max-width: 1024px) {
+	.cardsContainer {
+		padding: 35px 35px 0;
+		flex-direction: column;
+		justify-content: center;
+	}
 	.cardsPortfolio {
-		height: 60vh;
-		flex-basis: 200px;
+		flex-basis: 170px !important;
+		margin: 10px 20px;
+		display: flex;
+		border: 1px solid #fff;
+		&__img {
+			display: inline;
+			height: 100%;
+			max-width: 20%;
+			border-right: 1px solid #fff;
+		}
 		&__texts {
+			height: 100%;
+			position: relative;
+			align-items: flex-start;
+			padding: 10px; /* 
+			justify-content: space-around; */
 			&-title {
-				font-size: 1em;
+				font-weight: 600;
 			}
 			&-desc {
-				font-size: 0.7em;
+				opacity: 0.9;
+				text-align: left;
+				display: inline;
 			}
 		}
-	}
-}
-@media screen and (max-width: 1000px) and (min-width: 768px) {
-	.cardsPortfolio {
-		flex-basis: 250px;
-		&__texts {
-			&-title {
-				font-size: 1.2em;
-			}
-			&-desc {
-				font-size: 0.9em;
-			}
+		&:hover &__texts,
+		&__texts-divLinks,
+		&__texts-desc {
+			animation: none;
+		}
+		&__texts-divLinks {
+			display: inline;
+			padding: 0;
+			font-size: 0.7em;
+			align-self: flex-end;
 		}
 	}
 }
@@ -183,7 +188,7 @@
 		}
 	}
 }
-@media screen and (max-width: 1200px) and (min-width: 1000px) {
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
 	.cardsPortfolio {
 		flex-basis: 350px;
 	}
