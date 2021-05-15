@@ -20,6 +20,27 @@ const sectionsPage = new fullpage(`#fullpage`, {
 	anchors: [`home`, `about`, `skills`, `portfolio`, `contact`],
 	navigationTooltips: [`Home`, `About`, `Skills`, `Portfolio`, `Contact`],
 	showActiveTooltip: true,
+
+	afterLoad: function (origin, destination) {
+		if (destination.anchor == `about`) {
+			document.querySelector(".cardAbout").style.opacity = 1;
+		}
+		if (destination.anchor == `skills`) {
+			document
+				.querySelectorAll(".icons")
+				.forEach(icon => (icon.style.opacity = 1));
+		}
+		if (destination.anchor == `contact`) {
+			let form = document.querySelector(".form");
+			let imgForm = document.querySelector(
+				".contact-container > .container-img"
+			);
+			form.style.left = 0;
+			form.style.opacity = 1;
+			imgForm.style.right = 0;
+			imgForm.style.opacity = 1;
+		}
+	},
 });
 
 // Look for .hamburger
@@ -68,7 +89,7 @@ const icons = [
 		name: `STYLED-COMPONENTS`,
 		url: `./media/styled-components.png`,
 	},
-		{
+	{
 		name: `MATERIAL-UI`,
 		url: `./media/material-ui-1.svg`,
 	},
@@ -77,10 +98,9 @@ const icons = [
 		url: `./media/git-icon.svg`,
 	},
 	{
-		name: `GITHUB`,
-		url: `./media/github-icon-1.svg`,
+		name: `FIREBASE`,
+		url: `./media/firebase-2.svg`,
 	},
-
 ];
 
 for (icon of icons) {
@@ -95,3 +115,10 @@ for (icon of icons) {
 	divIcons.appendChild(imgIcon);
 	document.querySelector(".divIconsSkills").appendChild(divIcons);
 }
+
+//FORM CLEAN INPUT ON SUBMIT
+window.onbeforeunload = () => {
+	for (const form of document.getElementsByTagName("form")) {
+		form.reset();
+	}
+};

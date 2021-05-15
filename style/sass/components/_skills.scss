@@ -14,6 +14,8 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-evenly;
+		opacity: 0;
+		transition: 0.5s ease all;
 		p {
 			color: var.$colorW;
 			font-size: 1.1em;
@@ -21,8 +23,8 @@
 		img {
 			padding: 8px;
 			border-radius: 12px;
-			width: 100px;
-			height: 100px;
+			width: 90px;
+			height: 90px;
 		}
 		.imgIcon-JAVASCRIPT,
 		.imgIcon-REACT {
@@ -43,10 +45,7 @@
 	background-color: lighten(#cf649a, 19);
 }
 .imgIcon-GIT {
-	background-color: darken(#de4c369a, 11);
-}
-.imgIcon-GITHUB {
-	background-color: lighten(#161614, 34);
+	background-color: rgb(201, 201, 201);
 }
 .imgIcon-MATERIAL-UI {
 	background-color: darken(#0081cb, 16);
@@ -60,4 +59,7 @@
 		#ff9968,
 		#e9b15a
 	);
+}
+.imgIcon-FIREBASE {
+	background-color: darken(#0081cb, 5);
 }

@@ -16,12 +16,17 @@
 			display: none;
 		}
 	}
+
 	.container-icon {
 		left: 45%;
 	}
 
 	.cardAbout__profile {
 		border-right: none;
+		&-img {
+			width: 70% !important;
+			height: 40%;
+		}
 	}
 	.nav {
 		padding: 10px 50px;
