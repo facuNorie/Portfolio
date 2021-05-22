@@ -8,14 +8,14 @@
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
+
 	.icons {
 		height: 170px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-evenly;
-		opacity: 0;
-		transition: 0.5s ease all;
+
 		p {
 			color: var.$colorW;
 			font-size: 1.1em;
@@ -34,6 +34,8 @@
 			padding: 1px;
 		}
 	}
+	opacity: 0;
+	transition: 0.5s ease all;
 }
 .imgIcon-HTML {
 	background-color:  /* #f16529 */ lighten(#e44d26, 11);

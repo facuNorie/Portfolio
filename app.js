@@ -20,15 +20,14 @@ const sectionsPage = new fullpage(`#fullpage`, {
 	anchors: [`home`, `about`, `skills`, `portfolio`, `contact`],
 	navigationTooltips: [`Home`, `About`, `Skills`, `Portfolio`, `Contact`],
 	showActiveTooltip: true,
-
+	controlArrows: false,
+	slidesNavigation: true,
 	afterLoad: function (origin, destination) {
 		if (destination.anchor == `about`) {
 			document.querySelector(".cardAbout").style.opacity = 1;
 		}
 		if (destination.anchor == `skills`) {
-			document
-				.querySelectorAll(".icons")
-				.forEach(icon => (icon.style.opacity = 1));
+			document.querySelector(".divIconsSkills").style.opacity = 1;
 		}
 		if (destination.anchor == `contact`) {
 			let form = document.querySelector(".form");

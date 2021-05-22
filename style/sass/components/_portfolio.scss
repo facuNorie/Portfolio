@@ -5,17 +5,11 @@
 	background-color: var.$colorB;
 }
 
-.fp-controlArrow.fp-next,
-.fp-controlArrow.fp-prev {
-	top: 95%;
+.fp-slidesNav.fp-bottom {
+	text-align: center;
 }
-.fp-controlArrow.fp-next {
-	border-width: 30px 0 30px 30px;
-	border-color: transparent transparent transparent var.$colorC;
-}
-.fp-controlArrow.fp-prev {
-	border-width: 30px 30px 30px 0;
-	border-color: transparent var.$colorC transparent transparent;
+.fp-slidesNav ul li a span {
+	background-color: var.$colorW;
 }
 .cardsContainer {
 	display: flex;
