@@ -10,15 +10,27 @@
 		&__h1 {
 			text-align: center;
 			font-size: 1.9em;
+			margin-bottom: 100px;
 		}
-		&__img,
 		&__btn {
 			display: none;
+		}
+
+		&__img {
+			position: absolute;
+			bottom: 0;
+			width: 300px !important;
+			img {
+				width: 100%;
+			}
 		}
 	}
 
 	.container-icon {
 		left: 45%;
+		a {
+			color: var.$colorB;
+		}
 	}
 
 	.cardAbout__profile {
@@ -174,6 +186,7 @@
 			justify-content: space-around; */
 			&-title {
 				font-weight: 600;
+				position: relative;
 			}
 			&-desc {
 				opacity: 0.9;
@@ -181,16 +194,15 @@
 				display: inline;
 			}
 		}
-		&:hover &__texts,
-		&__texts-divLinks,
-		&__texts-desc {
-			animation: none;
+		&:hover &__img {
+			opacity: 1;
 		}
 		&__texts-divLinks {
 			display: inline;
 			padding: 0;
 			font-size: 0.7em;
 			align-self: flex-end;
+			opacity: 1;
 		}
 	}
 }

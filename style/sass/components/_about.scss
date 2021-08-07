@@ -8,7 +8,7 @@
 	border: 2.8px solid var.$colorW;
 	border-radius: 20px;
 	width: 75%;
-	height: 80vh;
+	height: 70vh;
 	margin: auto;
 	margin-top: 30px;
 	display: flex;
@@ -17,12 +17,16 @@
 	-moz-box-shadow: 0px 0px 111px -37px rgba(0, 0, 0, 0.94);
 	&__profile {
 		border-right: 2.8px solid var.$colorW;
-		min-width: 30%;
+		min-width: 35%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		&-img {
 			display: block;
 			width: 50%;
 			height: 30%;
-			margin: 30px auto;
+			margin: 25px 0;
 			border-radius: 100%;
 			border: 1px solid var.$colorW;
 			object-fit: cover;
@@ -36,6 +40,7 @@
 				color: var.$colorW;
 				font-size: 1.4em;
 				text-align: center;
+				font-weight: 700;
 			}
 			a {
 				font-size: 1.1em;
@@ -51,10 +56,10 @@
 	}
 
 	&__description {
-		padding: 0 10px;
+		padding: 20px;
 		display: flex;
 		align-items: center;
-		text-align: left;
+		text-align: center;
 		/* text-align: center; */
 		p {
 			color: var.$colorW;
