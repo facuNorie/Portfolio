@@ -1,0 +1,11 @@
+/node_modules
+
+package-lock.json
+
+/media
+
+/.firebase
+
+.firebaserc
+
+firebase.json
